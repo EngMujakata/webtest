@@ -470,7 +470,7 @@ body[data-th=studio] #boot{background:#0b0b10}
 @media(max-width:640px){
   body{font-size:14.5px}
   .wrap{width:calc(100% - 28px)}
-  .topbar .wrap{flex-direction:column;justify-content:center;gap:6px;padding:8px 0}.tl{justify-content:center;gap:4px 14px}.tl a,.tl span{font-size:12.5px;overflow-wrap:anywhere}.topbar .socials{justify-content:center}
+  
   .nav{min-height:60px;gap:10px}.brand{font-size:17px}.brand .logo,.brand .mark{width:36px;height:36px}
   .hero{padding-top:12px}.heroBox{border-radius:20px}
   .heroCopy h1{font-size:clamp(32px,10vw,42px)}
@@ -501,6 +501,8 @@ body[data-th=studio] #boot{background:#0b0b10}
   .ctab{border-radius:22px}
   .cform{padding:18px}
 }
+/* top info bar: desktop and wide landscape only */
+@media(orientation:portrait),(max-width:640px){.topbar{display:none!important}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}[data-rev]{opacity:1;transform:none}}
 </style>
 </head>
